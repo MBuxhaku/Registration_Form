@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">    
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <section id="overlay">
+      <img src="AvailityLogo.jpg" alt="Availity" id="logo">
+      <hr>
+      <form id="regForm" onsubmit="validateForm()" method="POST" action ="submission.html">
+		<h1>Registration Information</h1>
+        
+        <section class="firstlast">
+            <label for="first">First Name</label>
+    	    <input type="text" name="first" id="first" >
+            <label for="last">Last Name</label>
+    	    <input type="text" name="last" id="last" >
+        </section>        
+        <section class="npinumber">
+            <label for="npi">NPI Number</label>
+            <input type="text" name="npi" id="npi" >
+        </section>
+        <section class="businessaddress">
+            <label for="address1">Business Address</label>
+            <input type="text" name="address1" id="address1" >
+            <input type="text" name="address2" id="address2">
+            <input type="text" name="address3" id="address3">
+        </section>
+        <section class="phonenumber">
+            <label for="phone">Telephone Number</label>
+            <input type="text" name="phone" id="phone" >
+        </section>
+        <section class="emailaddress">
+            <label for="email">Email address</label>
+            <input type="text" name="email" id="email" >
+        </section>
+      
+        <section class="submission">
+          <input type="submit" value="Submit">
+        </section>
+      </form>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
